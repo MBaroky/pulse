@@ -6,7 +6,7 @@ function Header() {
   return (
     <header
       id='cover'
-      className='grad-bg py-5'
+      className='grad-bg pt-5 pb-0'
       style={{ minHeight: "350px" }}>
       <div className='container'>
         <div id='top-bar' className='row'>
@@ -40,6 +40,8 @@ function Header() {
       <div className='container py-5 mt-5'>
         <span className='spacer' style={{ height: "100px" }}></span>
       </div>
+
+      <hr className='container mt-5 mb-0' />
     </header>
   );
 }
