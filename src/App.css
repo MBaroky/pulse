@@ -1,15 +1,129 @@
 @import './assets/fonts/stylesheet';
+@import './assets/img/site-bg.png';
+
+
+/* main */
 :root {
   --main-font-family: "Poppins", sans-serif;
   --sec-font-family:'Porcine';
+  --color-dark: #121212;
+  --color-light: #E1E2FB;
+  --color-main: #4F16F2;
+  --color-gradient-main: #F9E1D1;
+  --color-gradient-sec: #EEEEFD;
+
 }
 
 body{
-  background-image: url(assets/img/site-bg.png);
+  background-image: url(./assets/img/site-bg.png);
   background-size: cover;
   font-family: var(--main-font-family);
+  font-weight: 400;
+  color: var(--color-dark);
+}
+a, a.nav-link{
+  color: var(--color-dark);
+}
+a:hover, a.nav-link:hover, a.nav-link.active{
+  color:var(--color-main)
+}
+h1,h2{
+  font-family: var(--sec-font-family);
+  font-weight: 900;
 }
 
-section{
-  font-family: var(--sec-font-family);
+
+p{
+  font-size: 15px;
+}
+
+p small{
+  font-size: 13px;
+}
+
+/* styles classes */
+.grad-bg{
+  background: linear-gradient(var(--color-gradient-main) 0%, var(--color-gradient-sec) 100%);
+}
+
+
+p.main{
+  line-height: 15px;
+  margin-left: 10px;
+  position: relative;
+}
+
+p.main::before{
+  content:"";
+  position: absolute;
+  width: 3px;
+  height: 15px;
+  top:0;
+  left: 0;
+  margin-left: -10px;
+  background-color: var(--color-main);
+}
+
+button.bg-light{
+  background-color: var(--color-light) !important;
+}
+
+.medium-font{
+  font-weight: 500;
+}
+
+.shadow{
+  box-shadow: 2px 2px 0px 3px var(--color-dark) !important;
+}
+.sticky-top{
+  top:-1px !important;
+}
+
+nav.navbar{
+  display: inline-block;
+}
+.sticky-top ul{
+  max-width: 100%;
+  overflow: hidden;
+  transition:max-width 200ms ease-in-out;
+}
+.sticky-top.is-pinned ul{
+  max-width: 0px;
+}
+
+
+/* custom */
+#cover-logo{
+  display: inline-block;
+  position:relative;
+  max-width: 80%;
+  transform: translateX(10%);
+}
+#cover-logo::after{
+  content: "";
+  position: absolute;
+  width: 42%;
+  height: 100%;
+  right:0;
+  bottom:0;
+  background-image: url(./assets/img/cover-arrow.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(50%,43%);
+}
+header#cover{
+  margin-bottom: -200px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+header#cover::after{
+  content:"";
+  position: absolute;
+  width:80%;
+  left:50%;
+  top:100%;
+  height: 1px;
+  background-color: var(--color-dark);
+  transform: translateX(-50%);
+  z-index:5;
 }
