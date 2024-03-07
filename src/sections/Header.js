@@ -12,9 +12,11 @@ function Header() {
         <div id='top-bar' className='row'>
           <div className='col-md-6'>
             <p className='main'>
-              A dynamic platform designed for conducting surveys{" "}
-              <br />
-              and gathering responses.
+              <small>
+                A dynamic platform designed for conducting surveys{" "}
+                <br />
+                and gathering responses.
+              </small>
             </p>
           </div>
           <div className='col-md-6'>

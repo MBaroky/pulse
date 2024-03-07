@@ -28,6 +28,8 @@ a:hover, a.nav-link:hover, a.nav-link.active{
 }
 h1,h2{
   font-family: var(--sec-font-family);
+  font-size: 80px;
+  line-height: 96px;
   font-weight: 900;
 }
 
@@ -89,7 +91,9 @@ nav.navbar{
 .sticky-top.is-pinned ul{
   max-width: 0px;
 }
-
+.clearfix{
+  color:rgba(0,0,0,0)
+}
 
 /* custom */
 #cover-logo{
@@ -114,4 +118,15 @@ header#cover{
   margin-bottom: -200px;
   max-width: 100%;
   overflow-x: hidden;
+}
+#about-text{
+  position: relative;
+}
+#about-text::after{
+  content:url(./assets/img/about-crecent.png);
+  position: absolute;
+  display: inline-block;
+  top: 100%;
+  right: 100%;
+  transform: translate(50%,-30%);
 }
