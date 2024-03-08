@@ -4,7 +4,7 @@ function BlogItem({ data }) {
   const { heading, desc, imgUrl } = data;
   return (
     <div className='col-md-4 d-flex'>
-      <div className='card mb-4 p-5 border border-2 blog-item d-flex flex-column justify-content-between'>
+      <div className='card mb-4 p-5 border border-2 blog-item d-flex flex-column justify-content-between isolate'>
         <p className='card-title'>
           <strong>{heading ? heading : ""}</strong>
         </p>

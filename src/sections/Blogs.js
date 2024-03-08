@@ -3,7 +3,7 @@ import BlogItem from "../components/BlogItem";
 
 function Blogs({ data }) {
   return (
-    <section id='blogs'>
+    <section id='blogs' className='mb-5'>
       <div className='container'>
         <div className='row mb-3 align-items-center'>
           <div className='col-md-9 d-flex flex-column flex-lg-row'>
@@ -66,8 +66,6 @@ function Blogs({ data }) {
           </div>
         </div>
       </div>
-
-      <hr className='container mt-5 mb-0' />
     </section>
   );
 }

@@ -58,5 +58,39 @@
             "desc":"Navigate the Intricacies of Survey Crafting, Participation Boosting, and Analytical Strategies, Unveiling Expert Tips for Maximizing the Impact of Your Survey Endeavors.",
             "imgUrl":"assets/img/blog-3.png"
         }
+    ],
+    "brands":[
+        {
+            "id":1,
+            "url":"assets/img/brands-1.png"
+        },
+        {
+            "id":2,
+            "url":"assets/img/brands-2.png"
+        },
+        {
+            "id":3,
+            "url":"assets/img/brands-3.png"
+        },
+        {
+            "id":4,
+            "url":"assets/img/brands-4.png"
+        },
+        {
+            "id":5,
+            "url":"assets/img/brands-5.png"
+        },
+        {
+            "id":6,
+            "url":"assets/img/brands-6.png"
+        },
+        {
+            "id":7,
+            "url":"assets/img/brands-7.png"
+        },
+        {
+            "id":8,
+            "url":"assets/img/brands-8.png"
+        }
     ]
 }

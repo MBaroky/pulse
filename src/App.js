@@ -9,6 +9,7 @@ import Blogs from "./sections/Blogs";
 import Brands from "./sections/Brands";
 
 import data from "./data.json";
+import Footer from "./sections/Footer";
 
 function App() {
   // Using state to store the data from the JSON file
@@ -28,7 +29,8 @@ function App() {
       <Testimonial data={jsonData.testimonials} />
       <Contact />
       <Blogs data={jsonData.blog} />
-      <Brands />
+      <Brands data={jsonData.brands} />
+      <Footer />
     </div>
   );
 }
