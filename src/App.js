@@ -6,6 +6,7 @@ import Header from "./sections/Header";
 import Testimonial from "./sections/Testimonial";
 import data from "./data.json";
 import Contact from "./sections/Contact";
+import Blogs from "./sections/Blogs";
 
 function App() {
   // Using state to store the data from the JSON file
@@ -24,6 +25,7 @@ function App() {
       <About />
       <Testimonial data={jsonData.testimonials} />
       <Contact />
+      <Blogs />
     </div>
   );
 }

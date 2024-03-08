@@ -20,13 +20,13 @@ function Testimonial({ data }) {
         </div>
         <div
           id='carouselWithIndicators'
-          class='carousel slide pb-5'
+          className='carousel slide pb-5'
           data-bs-ride='carousel'>
-          <ol class='carousel-indicators'>
+          <ol className='carousel-indicators'>
             <li
               data-bs-target='#carouselWithIndicators'
               data-bs-slide-to='0'
-              class='active'></li>
+              className='active'></li>
             <li
               data-bs-target='#carouselWithIndicators'
               data-bs-slide-to='1'></li>
@@ -34,8 +34,8 @@ function Testimonial({ data }) {
               data-bs-target='#carouselWithIndicators'
               data-bs-slide-to='2'></li>
           </ol>
-          <div class='carousel-inner'>
-            <div class='carousel-item active'>
+          <div className='carousel-inner'>
+            <div className='carousel-item active'>
               <div className='row' id='testmonials-wrapper'>
                 {data
                   ? data.map(item => (
@@ -44,7 +44,7 @@ function Testimonial({ data }) {
                   : ""}
               </div>
             </div>
-            <div class='carousel-item'>
+            <div className='carousel-item'>
               <div className='row' id='testmonials-wrapper'>
                 {data
                   ? data.map(item => (
@@ -53,7 +53,7 @@ function Testimonial({ data }) {
                   : ""}
               </div>
             </div>
-            <div class='carousel-item'>
+            <div className='carousel-item'>
               <div className='row' id='testmonials-wrapper'>
                 {data
                   ? data.map(item => (
@@ -64,8 +64,6 @@ function Testimonial({ data }) {
             </div>
           </div>
         </div>
-
-        <div className='spacer' style={{ height: "100px" }}></div>
       </div>
 
       <hr className='container mt-5 mb-0' />

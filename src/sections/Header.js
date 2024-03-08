@@ -4,7 +4,7 @@ function Header() {
   return (
     <header
       id='cover'
-      className='grad-bg pt-5 pb-0'
+      className='grad-bg pt-5 pb-0 isolate'
       style={{ minHeight: "350px" }}>
       <div className='container'>
         <div id='top-bar' className='row'>

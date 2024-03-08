@@ -3,7 +3,7 @@ import React from "react";
 function TestimonialItem({ data }) {
   const { desc, name, title, bgImg } = data;
   return (
-    <div className={`col-md-${bgImg ? "6" : "4"} d-flex`}>
+    <div className={`${bgImg ? "col-md-6" : "col-lg-4"} d-flex`}>
       <div
         className='card mb-4 p-5 border border-2 test-item d-flex flex-column justify-content-between'
         style={{
