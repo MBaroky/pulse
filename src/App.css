@@ -36,6 +36,7 @@ h1,h2{
 
 p{
   font-size: 15px;
+  font-weight: 400;
 }
 
 p small{
@@ -93,6 +94,29 @@ nav.navbar{
 }
 .clearfix{
   color:rgba(0,0,0,0)
+}
+.card-title{
+  color: var(--color-main);
+}
+.card{
+  border-radius: 30px;
+}
+.test-item{
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.test-item::before{
+  content:"";
+  position: absolute;
+  width: 304px;
+  height: 304px;
+  top: 0;
+  left: 0;
+  transform: translate(-50px,-50px);
+  background-color: #F9E2D4;
+  border-radius: 50%;
+  z-index: -1;
 }
 
 /* custom */

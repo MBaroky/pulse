@@ -3,9 +3,9 @@ import React from "react";
 function About() {
   return (
     <section id='about' className='py-5'>
-      <div className='container'>
+      <div className='container mb-3'>
         <div className='row'>
-          <div className='col d-flex'>
+          <div className='col d-flex flex-column flex-lg-row'>
             <h1 className='text-nowrap me-5'>About Pulse</h1>
             <div id='about-text'>
               <p className='main mt-5'>
