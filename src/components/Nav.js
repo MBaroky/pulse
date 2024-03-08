@@ -26,7 +26,7 @@ function Nav() {
           </button>
           <ul
             id='main-nav'
-            className='collapse navbar-collapse nav navbar-nav flex-nowrap'>
+            className='collapse navbar-collapse nav navbar-nav flex-nowrap bg-light'>
             <li className='nav-item text-dark'>
               <a
                 className='text-nowrap nav-link active'

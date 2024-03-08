@@ -66,7 +66,7 @@ p.main::before{
   margin-left: -10px;
   background-color: var(--color-main);
 }
-
+.bg-light{background-color: #fff !important;}
 button.bg-light{
   background-color: var(--color-light) !important;
 }
@@ -127,7 +127,8 @@ nav.navbar{
     position: absolute;
     top:100%;
     right:0;
-    background-color: var(--color-light);
+    border-radius:44px;
+    width:100%;
     padding:20px;
   }
 }
