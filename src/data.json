@@ -1,0 +1,44 @@
+{
+    "testimonials":[
+        {
+            "id":1,
+            "desc":"Pulse has transformed our market research approach. The user-friendly interface and real-time analytics have streamlined our survey processes. As a Marketing Manager, having instant access to participant insights has been invaluable for refining our strategies.",
+            "name":"Fatima Al-Mansoori",
+            "title":"Marketing Manager",
+            "slide":1,
+            "bgImg":"assets/img/test-1.png"
+        },
+        {
+            "id":2,
+            "desc":"As an academic researcher, Pulse has significantly enhanced my data collection methods. The customization options allow me to tailor surveys to the specificity I need for my studies. The platform's versatility has been instrumental in gathering comprehensive and meaningful responses.",
+            "name":"Ahmed Abdullah",
+            "title":"Academic Researcher",
+            "slide":1,
+            "bgImg":"assets/img/test-2.png"
+        },
+        {
+            "id":3,
+            "desc":"Pulse has proven invaluable in gathering patient satisfaction feedback in our healthcare facility. The ease of use has encouraged more patients to participate, and the real-time analytics allow us to address concerns promptly. It's a powerful tool for enhancing patient care and satisfaction.",
+            "name":"Dr. Layla Mahmoud",
+            "title":"Healthcare Administrator",
+            "slide":1,
+            "bgImg":false
+        },
+        {
+            "id":4,
+            "desc": "Our HR team relies on Pulse for employee feedback and engagement surveys. The platform's security features reassure us about the confidentiality of responses. Pulse has streamlined our internal feedback processes, providing actionable insights for enhancing our workplace environment.",
+            "name":"Kareem Hassan",
+            "title":"Human Resources Coordinator",
+            "slide":1,
+            "bgImg":false
+        },
+        {
+            "id":5,
+            "desc": "Pulse has become an integral part of our customer feedback process. The responsive design ensures a smooth experience for our customers, and the robust analytics help us identify trends and areas for improvement. It's a must-have tool for any Customer Experience Specialist.",
+            "name":"Aisha Ahmed",
+            "title":"Customer Experience Specialist",
+            "slide":1,
+            "bgImg":false
+        }
+    ]
+}

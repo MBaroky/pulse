@@ -1,4 +1,4 @@
-@import './assets/fonts/stylesheet';
+@import './fonts/stylesheet';
 
 
 /* main */
@@ -14,7 +14,7 @@
 }
 
 body{
-  background-image: url(./assets/img/site-bg.png);
+  background-image: url('../public/assets/img/site-bg.png');
   background-size: cover;
   font-family: var(--main-font-family);
   font-weight: 400;
@@ -98,10 +98,8 @@ nav.navbar{
 .card-title{
   color: var(--color-main);
 }
-.card{
-  border-radius: 30px;
-}
 .test-item{
+  border-radius: 30px;
   position: relative;
   overflow: hidden;
   isolation: isolate;
@@ -115,6 +113,7 @@ nav.navbar{
   left: 0;
   transform: translate(-50px,-50px);
   background-color: #F9E2D4;
+  opacity: 0.5;
   border-radius: 50%;
   z-index: -1;
 }
@@ -133,7 +132,7 @@ nav.navbar{
   height: 100%;
   right:0;
   bottom:0;
-  background-image: url(./assets/img/cover-arrow.png);
+  background-image: url(../public/assets/img/cover-arrow.png);
   background-size: contain;
   background-repeat: no-repeat;
   transform: translate(50%,43%);
@@ -147,10 +146,31 @@ header#cover{
   position: relative;
 }
 #about-text::after{
-  content:url(./assets/img/about-crecent.png);
+  content:url(../public/assets/img/about-crecent.png);
   position: absolute;
   display: inline-block;
   top: 100%;
   right: 100%;
   transform: translate(50%,-30%);
+}
+#carouselWithIndicators ol li{
+  transition: width 400ms ease-in-out;
+  height: 4px;
+  color:rgba(0,0,0,0);
+  background-color: var(--color-gradient-main);
+  position: relative;
+}
+#carouselWithIndicators ol li:not(.active)::after{
+  content:"";
+  position: absolute;
+  top:0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.2);
+}
+#carouselWithIndicators ol li.active{
+  background-color: var(--color-main);
+  opacity:1;
+  width:100px;
 }

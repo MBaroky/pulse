@@ -1,7 +1,5 @@
 import React from "react";
 
-import LogoCover from "../assets/img/logo-cover.png";
-
 function Header() {
   return (
     <header
@@ -31,7 +29,7 @@ function Header() {
           <div className='col-md-12'>
             <div id='cover-logo'>
               <img
-                src={LogoCover}
+                src='assets/img/logo-cover.png'
                 alt='logo-cover'
                 className='img-fluid'
               />

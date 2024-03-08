@@ -1,15 +1,18 @@
 import React from "react";
-import Logo from "../assets/img/logo-small.png";
 
 function Nav() {
   return (
     <div
       id='main-nav-sticky'
       className='container py-5 mt-3 sticky-top'>
-      <nav className='navbar navbar-light bg-light rounded-pill px-3'>
-        <div className='container-fluid text-left'>
+      <nav className='navbar navbar-light bg-light rounded-pill px-3 '>
+        <div className='container-fluid text-left justify-content-start'>
           <a className='navbar-brand' href='#'>
-            <img src={Logo} alt='logo-nav' className='img-fluid' />
+            <img
+              src='assets/img/logo-small.png'
+              alt='logo-nav'
+              className='img-fluid'
+            />
           </a>
           <ul className='nav d-flex flex-nowrap'>
             <li className='nav-item text-dark'>

@@ -1,23 +1,28 @@
 import React from "react";
 
-function TestimonialItem() {
+function TestimonialItem({ data }) {
+  const { desc, name, title, bgImg } = data;
   return (
-    <div className='col-md-6 p-5 border border-2 test-item card'>
-      <p className='card-title'>
-        <small>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Amet magni deserunt aliquam iusto officia eveniet dicta
-          doloribus dolor nobis quo inventore quos, neque architecto
-          fuga. Reprehenderit ducimus dolor non aliquam.
-        </small>
-      </p>
-      <div className='item-footer card-img-bottom pt-5'>
-        <p>
-          <small>
-            <strong>John Smith</strong> <br />
-            Marketing Manager
-          </small>
+    <div className={`col-md-${bgImg ? "6" : "4"} d-flex`}>
+      <div
+        className='card mb-4 p-5 border border-2 test-item d-flex flex-column justify-content-between'
+        style={{
+          backgroundImage: `url(${bgImg})`,
+          backgroundPosition: "right bottom",
+          backgroundSize: "auto 50%",
+          backgroundRepeat: "no-repeat",
+        }}>
+        <p className='card-title'>
+          <small>{desc ? desc : ""}</small>
         </p>
+        <div className='item-footer card-img-bottom pt-5'>
+          <p>
+            <small>
+              <strong>{name ? name : "John Smith"}</strong> <br />
+              {title ? title : "Marketing Manager"}
+            </small>
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import TestimonialItem from "../components/TestimonialItem";
 
-function Testimonial() {
+function Testimonial({ data }) {
   return (
     <section id='testimonial'>
       <div className='container'>
@@ -18,9 +18,53 @@ function Testimonial() {
             </button>
           </div>
         </div>
-        <div className='row' id='testmonials-wrapper'>
-          <TestimonialItem />
+        <div
+          id='carouselWithIndicators'
+          class='carousel slide pb-5'
+          data-bs-ride='carousel'>
+          <ol class='carousel-indicators'>
+            <li
+              data-bs-target='#carouselWithIndicators'
+              data-bs-slide-to='0'
+              class='active'></li>
+            <li
+              data-bs-target='#carouselWithIndicators'
+              data-bs-slide-to='1'></li>
+            <li
+              data-bs-target='#carouselWithIndicators'
+              data-bs-slide-to='2'></li>
+          </ol>
+          <div class='carousel-inner'>
+            <div class='carousel-item active'>
+              <div className='row' id='testmonials-wrapper'>
+                {data
+                  ? data.map(item => (
+                      <TestimonialItem key={item.id} data={item} />
+                    ))
+                  : ""}
+              </div>
+            </div>
+            <div class='carousel-item'>
+              <div className='row' id='testmonials-wrapper'>
+                {data
+                  ? data.map(item => (
+                      <TestimonialItem key={item.id} data={item} />
+                    ))
+                  : ""}
+              </div>
+            </div>
+            <div class='carousel-item'>
+              <div className='row' id='testmonials-wrapper'>
+                {data
+                  ? data.map(item => (
+                      <TestimonialItem key={item.id} data={item} />
+                    ))
+                  : ""}
+              </div>
+            </div>
+          </div>
         </div>
+
         <div className='spacer' style={{ height: "100px" }}></div>
       </div>
 
