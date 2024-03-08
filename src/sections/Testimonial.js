@@ -19,19 +19,19 @@ function Testimonial({ data }) {
           </div>
         </div>
         <div
-          id='carouselWithIndicators'
-          className='carousel slide pb-5'
+          id='testCarousel'
+          className='carousel slide pb-5 carouselWithIndicators'
           data-bs-ride='carousel'>
           <ol className='carousel-indicators'>
             <li
-              data-bs-target='#carouselWithIndicators'
+              data-bs-target='#testCarousel'
               data-bs-slide-to='0'
               className='active'></li>
             <li
-              data-bs-target='#carouselWithIndicators'
+              data-bs-target='#testCarousel'
               data-bs-slide-to='1'></li>
             <li
-              data-bs-target='#carouselWithIndicators'
+              data-bs-target='#testCarousel'
               data-bs-slide-to='2'></li>
           </ol>
           <div className='carousel-inner'>

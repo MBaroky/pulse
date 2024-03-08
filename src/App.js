@@ -4,9 +4,11 @@ import Nav from "./components/Nav";
 import About from "./sections/About";
 import Header from "./sections/Header";
 import Testimonial from "./sections/Testimonial";
-import data from "./data.json";
 import Contact from "./sections/Contact";
 import Blogs from "./sections/Blogs";
+import Brands from "./sections/Brands";
+
+import data from "./data.json";
 
 function App() {
   // Using state to store the data from the JSON file
@@ -25,7 +27,8 @@ function App() {
       <About />
       <Testimonial data={jsonData.testimonials} />
       <Contact />
-      <Blogs />
+      <Blogs data={jsonData.blog} />
+      <Brands />
     </div>
   );
 }

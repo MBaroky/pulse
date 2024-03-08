@@ -40,5 +40,23 @@
             "slide":1,
             "bgImg":false
         }
+    ],
+    "blog":[
+        {
+            "id":1,
+            "heading":"A Comprehensive Guide to Survey Success",
+            "desc":"Uncover the Secrets of Effective Survey Design, Strategic Distribution Strategies, and In-Depth Analysis Techniques to Propel Your Insights to New Heights.",
+            "imgUrl":"assets/img/blog-1.png"
+        },{
+            "id":2,
+            "heading":"Success Stories and Case Studies",
+            "desc":"Immerse Yourself in Real-world Examples That Showcase How Pulse Transforms Businesses and Research Initiatives, Bringing Success Stories to the Forefront.",
+            "imgUrl":"assets/img/blog-2.png"
+        },{
+            "id":3,
+            "heading":"Tips for Maximizing Your Survey Impact",
+            "desc":"Navigate the Intricacies of Survey Crafting, Participation Boosting, and Analytical Strategies, Unveiling Expert Tips for Maximizing the Impact of Your Survey Endeavors.",
+            "imgUrl":"assets/img/blog-3.png"
+        }
     ]
 }

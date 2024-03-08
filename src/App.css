@@ -123,7 +123,7 @@ nav.navbar{
   color: var(--color-main);
 }
 .card{
-
+  border-color: var(--color-dark);
   border-radius: 44px;
 }
 .test-item{
@@ -144,9 +144,43 @@ nav.navbar{
   border-radius: 50%;
   z-index: -1;
 }
+.carouselWithIndicators ol li{
+  transition: width 400ms ease-in-out;
+  height: 4px;
+  color:rgba(0,0,0,0);
+  background-color: var(--color-gradient-main);
+  position: relative;
+}
+.carouselWithIndicators ol li:not(.active)::after{
+  content:"";
+  position: absolute;
+  top:0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.2);
+}
+.carouselWithIndicators ol li.active{
+  background-color: var(--color-main);
+  opacity:1;
+  width:100px;
+}
+.blog-item{
+  background-color: #f6f6f6;
+}
+.blog-item:hover{
+  background-color: var(--color-main);
+}
+.blog-item:hover p{
+  color: var(--color-light);
+}
+.blog-item:hover .btn{
+  background-color: #fff !important;
+}
 
 form input.form-control, form textarea.form-control{
   border-width: 0 0 2px 0;
+  border-color: var(--color-dark);
   border-radius: 0;
 }
 
@@ -185,25 +219,4 @@ header#cover{
   right: 100%;
   transform: translate(50%,-30%);
   z-index: -1;
-}
-#carouselWithIndicators ol li{
-  transition: width 400ms ease-in-out;
-  height: 4px;
-  color:rgba(0,0,0,0);
-  background-color: var(--color-gradient-main);
-  position: relative;
-}
-#carouselWithIndicators ol li:not(.active)::after{
-  content:"";
-  position: absolute;
-  top:0;
-  left:0;
-  bottom: 0;
-  right: 0;
-  background: rgba(0,0,0,0.2);
-}
-#carouselWithIndicators ol li.active{
-  background-color: var(--color-main);
-  opacity:1;
-  width:100px;
 }
