@@ -2,7 +2,7 @@ import React from "react";
 
 function Brands({ data }) {
   return (
-    <section id='brands' className=' py-5'>
+    <section id='brands' className=' py-5 mb-5'>
       <div className='container-fluid'>
         <p className='text-center'>
           <strong>Trusted Brands</strong>
@@ -10,7 +10,7 @@ function Brands({ data }) {
         <div className='row'>
           {data
             ? data.map(item => (
-                <div className='col text-center d-flex align-items-center'>
+                <div className='col justify-content-center d-flex align-items-center'>
                   <img
                     className='img-fluid'
                     src={item.url}

@@ -30,6 +30,7 @@ function App() {
       <Contact />
       <Blogs data={jsonData.blog} />
       <Brands data={jsonData.brands} />
+      <div className='clearfix'>...</div>
       <Footer />
     </div>
   );

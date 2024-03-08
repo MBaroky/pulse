@@ -220,6 +220,14 @@ header#cover{
   transform: translate(50%,-30%);
   z-index: -1;
 }
+footer{
+  background-color: var(--color-main);
+}
+footer a{
+  color:var(--color-gradient-sec);
+  text-decoration: none;
+
+}
 
 
 
