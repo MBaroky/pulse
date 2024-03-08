@@ -10,7 +10,7 @@ function Brands({ data }) {
         <div className='row'>
           {data
             ? data.map(item => (
-                <div className='col justify-content-center d-flex align-items-center'>
+                <div className='col-md col-3 justify-content-center d-flex align-items-center'>
                   <img
                     className='img-fluid'
                     src={item.url}

@@ -5,7 +5,7 @@ function Nav() {
     <div
       id='main-nav-sticky'
       className='container py-5 mt-3 sticky-top'>
-      <nav className='navbar navbar-light bg-light rounded-pill px-3 '>
+      <nav className='navbar navbar-expand-md navbar-light bg-light rounded-pill px-3 '>
         <div className='container-fluid text-left justify-content-start'>
           <a className='navbar-brand' href='#'>
             <img
@@ -14,7 +14,19 @@ function Nav() {
               className='img-fluid'
             />
           </a>
-          <ul className='nav d-flex flex-nowrap'>
+          <button
+            className='navbar-toggler'
+            type='button'
+            data-bs-toggle='collapse'
+            data-bs-target='#main-nav'
+            aria-controls='main-nav'
+            aria-expanded='false'
+            aria-label='Toggle navigation'>
+            <span class='navbar-toggler-icon'></span>
+          </button>
+          <ul
+            id='main-nav'
+            className='collapse navbar-collapse nav navbar-nav flex-nowrap'>
             <li className='nav-item text-dark'>
               <a
                 className='text-nowrap nav-link active'

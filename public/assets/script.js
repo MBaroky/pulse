@@ -19,8 +19,6 @@ function waitForElm(selector) {
   });
 }
 
-// const el = document.querySelector(".sticky-top");
-
 waitForElm(".sticky-top").then(elm => {
   const observer = new IntersectionObserver(
     ([e]) =>

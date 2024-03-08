@@ -23,7 +23,7 @@ body{
 a, a.nav-link{
   color: var(--color-dark);
 }
-a:hover, a.nav-link:hover, a.nav-link.active{
+a:hover, a.nav-link:hover, #main-nav a.nav-link.active{
   color:var(--color-main)
 }
 h1,h2{
@@ -113,8 +113,23 @@ nav.navbar{
   overflow: hidden;
   transition:max-width 200ms ease-in-out;
 }
-.sticky-top.is-pinned ul{
-  max-width: 0px;
+@media (min-width:768px){
+  .sticky-top.is-pinned ul{
+    max-width: 0px;
+  }
+}
+@media (max-width:767px){
+  h1{
+    font-size: 3rem;
+  }
+
+  ul#main-nav{
+    position: absolute;
+    top:100%;
+    right:0;
+    background-color: var(--color-light);
+    padding:20px;
+  }
 }
 .clearfix{
   color:rgba(0,0,0,0)
@@ -227,6 +242,9 @@ footer a{
   color:var(--color-gradient-sec);
   text-decoration: none;
 
+}
+#footer-logo{
+  margin-top:-140px;
 }
 
 

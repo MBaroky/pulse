@@ -31,7 +31,7 @@ function App() {
       <Blogs data={jsonData.blog} />
       <Brands data={jsonData.brands} />
       <div className='clearfix'>...</div>
-      <Footer />
+      <Footer social={jsonData.social} links={jsonData.footerLinks} />
     </div>
   );
 }
