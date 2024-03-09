@@ -199,13 +199,19 @@ form input.form-control, form textarea.form-control{
   border-color: var(--color-dark);
   border-radius: 0;
 }
+.slick-track{
+  display: flex;
+  align-items: center;
+}
 
 /* custom */
 #cover-logo{
   display: inline-block;
   position:relative;
   max-width: 80%;
-  transform: translateX(10%);
+  transform: translateX(10%) translateY(-100%);
+  animation: 1s bounce both;
+  animation-delay: 0.4s;
 }
 #cover-logo::after{
   content: "";
@@ -287,3 +293,29 @@ footer a{
 transform: translateX(0);
 }
 
+/* CSS Animations */
+
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-60px)
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(-30px)
+  }
+  100% {
+    transform: translateY(0)
+  }
+}

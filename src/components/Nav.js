@@ -22,7 +22,7 @@ function Nav() {
             aria-controls='main-nav'
             aria-expanded='false'
             aria-label='Toggle navigation'>
-            <span class='navbar-toggler-icon'></span>
+            <span className='navbar-toggler-icon'></span>
           </button>
           <ul
             id='main-nav'
@@ -47,7 +47,7 @@ function Nav() {
             </li>
             <li className='nav-item'>
               <a className='text-nowrap nav-link' href='#'>
-                Cooperates
+                Corporate
               </a>
             </li>
           </ul>
