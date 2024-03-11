@@ -316,7 +316,7 @@ transform: translateX(0);
   transform: translateZ(0);
   border: 2px solid #000;
   background: linear-gradient(0deg, #efefef 0%, #ffffff 40%, #ffffff 60%, #efefef 100%);
-  --border-size:30px;
+  --border-size:28px;
 }
 #slider-wrapper .slider-tiker:nth-child(1) {
   /* clip-path:inset(0 1450px 0 0); */
@@ -360,7 +360,7 @@ transform: translateX(0);
   position:absolute;
   z-index: 2;
   top:0;
-  left: 1249px;
+  left: 1247px;
   height: 100%;
   border-left: 2px solid #000;
 

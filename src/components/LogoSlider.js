@@ -11,7 +11,7 @@ function LogoSlider({ logos }) {
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    autoplaySpeed: 0,
+    autoplaySpeed: 2000,
     speed: 4000,
     cssEase: "linear",
     // responsive: [
