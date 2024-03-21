@@ -8,8 +8,6 @@ function Contact() {
           <div className='col d-flex flex-column flex-lg-row'>
             <h1 className='text-nowrap me-5'>Contact Us!</h1>
             <p className='main mt-5'>
-              Engage, interact, and stay updated! Connect with us to
-              join a vibrant community of like-minded individuals.
               Follow our journey, share your thoughts, and be part of
               the conversation. Your connection matters, and we look
               forward to building meaningful relationships with you.

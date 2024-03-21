@@ -2,7 +2,7 @@
     "testimonials":[
         {
             "id":1,
-            "desc":"Pulse has transformed our market research approach. The user-friendly interface and real-time analytics have streamlined our survey processes. As a Marketing Manager, having instant access to participant insights has been invaluable for refining our strategies.",
+            "desc":"Thanks to Pulse, we transitioned from merely garnering surface-level impressions to establishing profound connections with our consumers.",
             "name":"Fatima Al-Mansoori",
             "title":"Marketing Manager",
             "slide":1,
@@ -10,7 +10,7 @@
         },
         {
             "id":2,
-            "desc":"As an academic researcher, Pulse has significantly enhanced my data collection methods. The customization options allow me to tailor surveys to the specificity I need for my studies. The platform's versatility has been instrumental in gathering comprehensive and meaningful responses.",
+            "desc":"By utilizing Pulse, we've been able to delve deeper into our customers’ needs, preferences, and behaviors, resulting in a stronger overall relationship with them.",
             "name":"Ahmed Abdullah",
             "title":"Academic Researcher",
             "slide":1,
@@ -18,7 +18,7 @@
         },
         {
             "id":3,
-            "desc":"Pulse has proven invaluable in gathering patient satisfaction feedback in our healthcare facility. The ease of use has encouraged more patients to participate, and the real-time analytics allow us to address concerns promptly. It's a powerful tool for enhancing patient care and satisfaction.",
+            "desc":"Thanks to the cost-effective solutions, we've been able to achieve remarkable savings without compromising on quality. ",
             "name":"Dr. Layla Mahmoud",
             "title":"Healthcare Administrator",
             "slide":1,
