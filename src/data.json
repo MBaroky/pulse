@@ -1,108 +1,130 @@
 {
-    "testimonials":[
-        {
-            "id":1,
-            "desc":"Thanks to Pulse, we transitioned from merely garnering surface-level impressions to establishing profound connections with our consumers.",
-            "name":"Fatima Al-Mansoori",
-            "title":"Marketing Manager",
-            "slide":1,
-            "bgImg":"assets/img/test-1.png"
-        },
-        {
-            "id":2,
-            "desc":"By utilizing Pulse, we've been able to delve deeper into our customers’ needs, preferences, and behaviors, resulting in a stronger overall relationship with them.",
-            "name":"Ahmed Abdullah",
-            "title":"Academic Researcher",
-            "slide":1,
-            "bgImg":"assets/img/test-2.png"
-        },
-        {
-            "id":3,
-            "desc":"Thanks to the cost-effective solutions, we've been able to achieve remarkable savings without compromising on quality. ",
-            "name":"Dr. Layla Mahmoud",
-            "title":"Healthcare Administrator",
-            "slide":1,
-            "bgImg":false
-        },
-        {
-            "id":4,
-            "desc": "Our HR team relies on Pulse for employee feedback and engagement surveys. The platform's security features reassure us about the confidentiality of responses. Pulse has streamlined our internal feedback processes, providing actionable insights for enhancing our workplace environment.",
-            "name":"Kareem Hassan",
-            "title":"Human Resources Coordinator",
-            "slide":1,
-            "bgImg":false
-        },
-        {
-            "id":5,
-            "desc": "Pulse has become an integral part of our customer feedback process. The responsive design ensures a smooth experience for our customers, and the robust analytics help us identify trends and areas for improvement. It's a must-have tool for any Customer Experience Specialist.",
-            "name":"Aisha Ahmed",
-            "title":"Customer Experience Specialist",
-            "slide":1,
-            "bgImg":false
-        }
-    ],
-    "blog":[
-        {
-            "id":1,
-            "heading":"A Comprehensive Guide to Survey Success",
-            "desc":"Uncover the Secrets of Effective Survey Design, Strategic Distribution Strategies, and In-Depth Analysis Techniques to Propel Your Insights to New Heights.",
-            "imgUrl":"assets/img/blog-1.png"
-        },{
-            "id":2,
-            "heading":"Success Stories and Case Studies",
-            "desc":"Immerse Yourself in Real-world Examples That Showcase How Pulse Transforms Businesses and Research Initiatives, Bringing Success Stories to the Forefront.",
-            "imgUrl":"assets/img/blog-2.png"
-        },{
-            "id":3,
-            "heading":"Tips for Maximizing Your Survey Impact",
-            "desc":"Navigate the Intricacies of Survey Crafting, Participation Boosting, and Analytical Strategies, Unveiling Expert Tips for Maximizing the Impact of Your Survey Endeavors.",
-            "imgUrl":"assets/img/blog-3.png"
-        }
-    ],
-    "brands":[
-        {
-            "id":1,
-            "url":"assets/img/brands-1.png"
-        },
-        {
-            "id":2,
-            "url":"assets/img/brands-2.png"
-        },
-        {
-            "id":3,
-            "url":"assets/img/brands-3.png"
-        },
-        {
-            "id":4,
-            "url":"assets/img/brands-4.png"
-        },
-        {
-            "id":5,
-            "url":"assets/img/brands-5.png"
-        },
-        {
-            "id":6,
-            "url":"assets/img/brands-6.png"
-        },
-        {
-            "id":7,
-            "url":"assets/img/brands-7.png"
-        },
-        {
-            "id":8,
-            "url":"assets/img/brands-8.png"
-        }
-    ],
-    "social":[
-        {"id":1, "url":"assets/img/icons-1.png"},
-        {"id":2, "url":"assets/img/icons-2.png"},
-        {"id":3, "url":"assets/img/icons-3.png"},
-        {"id":4, "url":"assets/img/icons-4.png"}
-    ],
-    "footerLinks":[
-        {"id":1,"title":"Pulse Surveys","links":["About Us", "Testimonials", "Blog"]},
-        {"id":2,"title":"Quick Links","links":["Term of Membership", "Privacy Policy", "FAQ's"]},
-        {"id":3,"title":"My Account","links":["Sign In", "Terms of Service", "Cookie Settings"]},
-        {"id":4,"title":"Support","links":["Support@Pulse.online", "Box No. 44475, Dubai", "866 361 5363"]}
-    ]
+  "testimonials": [
+    {
+      "id": 1,
+      "desc": "Thanks to Pulse, we transitioned from merely garnering surface-level impressions to establishing profound connections with our consumers.",
+      "name": "Fatima Al-Mansoori",
+      "title": "Marketing Manager",
+      "slide": 1,
+      "bgImg": "assets/img/test-1.png"
+    },
+    {
+      "id": 2,
+      "desc": "By utilizing Pulse, we've been able to delve deeper into our customers’ needs, preferences, and behaviors, resulting in a stronger overall relationship with them.",
+      "name": "Ahmed Abdullah",
+      "title": "Academic Researcher",
+      "slide": 1,
+      "bgImg": "assets/img/test-2.png"
+    },
+    {
+      "id": 3,
+      "desc": "Thanks to the cost-effective solutions, we've been able to achieve remarkable savings without compromising on quality. ",
+      "name": "Dr. Layla Mahmoud",
+      "title": "Healthcare Administrator",
+      "slide": 1,
+      "bgImg": false
+    },
+    {
+      "id": 4,
+      "desc": "Thanks to Pulse, we transitioned from merely garnering surface-level impressions to establishing profound connections with our consumers.",
+      "name": "Kareem Hassan",
+      "title": "Human Resources Coordinator",
+      "slide": 1,
+      "bgImg": false
+    },
+    {
+      "id": 5,
+      "desc": "By utilizing Pulse, we've been able to delve deeper into our customers’ needs, preferences, and behaviors, resulting in a stronger overall relationship with them.",
+      "name": "Aisha Ahmed",
+      "title": "Customer Experience Specialist",
+      "slide": 1,
+      "bgImg": false
+    }
+  ],
+  "blog": [
+    {
+      "id": 1,
+      "heading": "A Comprehensive Guide to Survey Success",
+      "desc": "Uncover the Secrets of Effective Survey Design, Strategic Distribution Strategies, and In-Depth Analysis Techniques to Propel Your Insights to New Heights.",
+      "imgUrl": "assets/img/blog-1.png"
+    },
+    {
+      "id": 2,
+      "heading": "Success Stories and Case Studies",
+      "desc": "Immerse Yourself in Real-world Examples That Showcase How Pulse Transforms Businesses and Research Initiatives, Bringing Success Stories to the Forefront.",
+      "imgUrl": "assets/img/blog-2.png"
+    },
+    {
+      "id": 3,
+      "heading": "Tips for Maximizing Your Survey Impact",
+      "desc": "Navigate the Intricacies of Survey Crafting, Participation Boosting, and Analytical Strategies, Unveiling Expert Tips for Maximizing the Impact of Your Survey Endeavors.",
+      "imgUrl": "assets/img/blog-3.png"
+    }
+  ],
+  "brands": [
+    {
+      "id": 1,
+      "url": "assets/img/brands-1.png"
+    },
+    {
+      "id": 2,
+      "url": "assets/img/brands-2.png"
+    },
+    {
+      "id": 3,
+      "url": "assets/img/brands-3.png"
+    },
+    {
+      "id": 4,
+      "url": "assets/img/brands-4.png"
+    },
+    {
+      "id": 5,
+      "url": "assets/img/brands-5.png"
+    },
+    {
+      "id": 6,
+      "url": "assets/img/brands-6.png"
+    },
+    {
+      "id": 7,
+      "url": "assets/img/brands-7.png"
+    },
+    {
+      "id": 8,
+      "url": "assets/img/brands-8.png"
+    }
+  ],
+  "social": [
+    { "id": 1, "url": "assets/img/icons-1.png" },
+    { "id": 2, "url": "assets/img/icons-2.png" },
+    { "id": 3, "url": "assets/img/icons-3.png" },
+    { "id": 4, "url": "assets/img/icons-4.png" }
+  ],
+  "footerLinks": [
+    {
+      "id": 1,
+      "title": "Pulse Surveys",
+      "links": ["About Us", "Testimonials", "Blog"]
+    },
+    {
+      "id": 2,
+      "title": "Quick Links",
+      "links": ["Term of Membership", "Privacy Policy", "FAQ's"]
+    },
+    {
+      "id": 3,
+      "title": "My Account",
+      "links": ["Sign In", "Terms of Service", "Cookie Settings"]
+    },
+    {
+      "id": 4,
+      "title": "Support",
+      "links": [
+        "Support@Pulse.online",
+        "Box No. 44475, Dubai",
+        "866 361 5363"
+      ]
+    }
+  ]
 }
