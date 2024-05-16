@@ -23,7 +23,7 @@ function Footer({ social, links }) {
               {social
                 ? social.map(icon => (
                     <li key={icon.id} className='px-1'>
-                      <a href=''>
+                      <a href='/'>
                         <img
                           src={icon.url}
                           alt=''

@@ -1,4 +1,12 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
+
+const NavData = [
+  { title: "About pulse", link: "/about" },
+  { title: "How It Works", link: "/how-it-works" },
+  { title: "Rewards", link: "/rewards" },
+  { title: "Corporate", link: "corporate" },
+];
 
 function Nav() {
   return (
@@ -7,13 +15,13 @@ function Nav() {
       className='container py-5 mt-3 sticky-top'>
       <nav className='navbar navbar-expand-md navbar-light bg-light rounded-pill px-3 '>
         <div className='container-fluid text-left justify-content-start'>
-          <a className='navbar-brand' href='#'>
+          <Link className='navbar-brand' to='/'>
             <img
               src='assets/img/logo-small.png'
               alt='logo-nav'
               className='img-fluid'
             />
-          </a>
+          </Link>
           <button
             className='navbar-toggler'
             type='button'
@@ -27,29 +35,16 @@ function Nav() {
           <ul
             id='main-nav'
             className='collapse navbar-collapse nav navbar-nav flex-nowrap bg-light'>
-            <li className='nav-item text-dark'>
-              <a
-                className='text-nowrap nav-link active'
-                aria-current='page'
-                href='#'>
-                About pulse
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a className='text-nowrap nav-link' href='#'>
-                How It Works
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a className='text-nowrap nav-link' href='#'>
-                Rewards
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a className='text-nowrap nav-link' href='#'>
-                Corporate
-              </a>
-            </li>
+            {NavData.map((item, index) => (
+              <li className='nav-item text-dark'>
+                <NavLink
+                  className='text-nowrap nav-link'
+                  aria-current='page'
+                  to={item.link}>
+                  {item.title}
+                </NavLink>
+              </li>
+            ))}
           </ul>
         </div>
       </nav>

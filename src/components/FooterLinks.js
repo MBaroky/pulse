@@ -12,7 +12,7 @@ function FooterLinks({ id, data }) {
               <li key={index}>
                 <p className='text-light mb-lg-0'>
                   <small>
-                    <a className=' text-light' href=''>
+                    <a className=' text-light' href='/'>
                       {link}
                     </a>
                   </small>
