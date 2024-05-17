@@ -8,11 +8,11 @@ const NavData = [
   { title: "Corporate", link: "corporate" },
 ];
 
-function Nav() {
+function Nav({ className }) {
   return (
     <div
       id='main-nav-sticky'
-      className='container py-5 mt-3 sticky-top'>
+      className={`container py-5 mt-3 sticky-top ${className}`}>
       <nav className='navbar navbar-expand-md navbar-light bg-light rounded-pill px-3 '>
         <div className='container-fluid text-left justify-content-start'>
           <Link className='navbar-brand' to='/'>
@@ -36,7 +36,7 @@ function Nav() {
             id='main-nav'
             className='collapse navbar-collapse nav navbar-nav flex-nowrap bg-light'>
             {NavData.map((item, index) => (
-              <li className='nav-item text-dark'>
+              <li key={index} className='nav-item text-dark'>
                 <NavLink
                   className='text-nowrap nav-link'
                   aria-current='page'

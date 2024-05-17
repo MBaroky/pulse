@@ -228,7 +228,7 @@ form input.form-control, form textarea.form-control{
 header#cover{
   margin-bottom: -200px;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 #about-text{
   position: relative;

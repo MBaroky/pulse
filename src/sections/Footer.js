@@ -3,7 +3,9 @@ import FooterLinks from "../components/FooterLinks";
 
 function Footer({ social, links }) {
   return (
-    <footer className='mt-5'>
+    <footer
+      className='mt-5'
+      style={{ zIndex: 9999, position: "relative" }}>
       <div className='container py-5'>
         <div className='row'>
           <div className='col-lg col-6 d-flex align-items-center'>

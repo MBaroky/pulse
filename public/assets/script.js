@@ -19,12 +19,13 @@ function waitForElm(selector) {
   });
 }
 
-waitForElm(".sticky-top").then(elm => {
-  const observer = new IntersectionObserver(
-    ([e]) =>
+waitForElm("#main-nav-sticky").then(elm => {
+  const observer = new IntersectionObserver(([e]) => {
+    console.log(e.intersectionRatio);
+    return (
       e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
-    { threshold: [1] }
-  );
-
+      { threshold: [1] }
+    );
+  });
   observer.observe(elm);
 });
