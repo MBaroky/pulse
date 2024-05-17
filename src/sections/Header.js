@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -18,9 +19,11 @@ function Header() {
             </p>
           </div>
           <div className='col-md-6'>
-            <button className='btn rounded-pill px-4 py-2 btn-md bg-light float-end medium-font shadow'>
+            <Link
+              className='btn rounded-pill px-4 py-2 btn-md bg-light float-end medium-font shadow'
+              to='contact'>
               Say hi don’t be shy
-            </button>
+            </Link>
           </div>
         </div>
       </div>

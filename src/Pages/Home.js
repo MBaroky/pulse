@@ -17,7 +17,18 @@ function Home({ data }) {
       <div className='clearfix'>...</div>
       <About />
       <Testimonial data={data.testimonials} />
-      <Contact />
+      <Contact parent='home'>
+        <div className='row mb-3 align-items-center'>
+          <div className='col d-flex flex-column flex-lg-row'>
+            <h1 className='text-nowrap me-5'>Contact Us!</h1>
+            <p className='main mt-5'>
+              Follow our journey, share your thoughts, and be part of
+              the conversation. Your connection matters, and we look
+              forward to building meaningful relationships with you.
+            </p>
+          </div>
+        </div>
+      </Contact>
       <Blogs data={data.blog} />
       <Brands data={data.brands} />
       <div className='clearfix'>...</div>

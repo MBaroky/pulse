@@ -1,28 +1,19 @@
 import React from "react";
 
-function Contact() {
+function Contact({ children, className, parent }) {
   return (
-    <section id='contact' className='py-5'>
+    <section id='contact' className={` ${parent ? "py-5" : ""}`}>
       <div className='container'>
-        <div className='row mb-3 align-items-center'>
-          <div className='col d-flex flex-column flex-lg-row'>
-            <h1 className='text-nowrap me-5'>Contact Us!</h1>
-            <p className='main mt-5'>
-              Follow our journey, share your thoughts, and be part of
-              the conversation. Your connection matters, and we look
-              forward to building meaningful relationships with you.
-            </p>
-          </div>
-        </div>
+        {children}
         <div className='row'>
-          <div className='col card p-5 isolate'>
+          <div className={`col card p-5 isolate ${className}`}>
             <div className='row'>
-              <form action='' className='col'>
+              <form action='' className={` col`}>
                 <div className='py-3'>
                   <input
                     name='name'
                     type='text'
-                    className='form-control px-0 pb-3'
+                    className='form-control px-0 pb-3 bg-transparent '
                     id='name'
                     placeholder='Full name'
                   />
@@ -31,7 +22,7 @@ function Contact() {
                   <input
                     name='email'
                     type='email'
-                    className='form-control px-0 pb-3'
+                    className='form-control px-0 pb-3 bg-transparent '
                     id='email'
                     placeholder='Email'
                   />
@@ -39,7 +30,7 @@ function Contact() {
                 <div className='py-3'>
                   <textarea
                     name='message'
-                    className='form-control px-0 pb-3'
+                    className='form-control px-0 pb-3 bg-transparent '
                     id='message'
                     placeholder='Message'
                     rows={3}
@@ -73,8 +64,7 @@ function Contact() {
       </div>
 
       <div className='spacer' style={{ height: "50px" }}></div>
-
-      <hr className='container mt-5 mb-0' />
+      {parent ? <hr className='container mt-5 mb-0' /> : <></>}
     </section>
   );
 }
