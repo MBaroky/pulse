@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function FooterLinks({ id, data }) {
   return (
@@ -8,13 +9,13 @@ function FooterLinks({ id, data }) {
       </p>
       <ul className='list-unstyled text-light  mb-lg-0 lh-lg mt-2'>
         {data
-          ? data[id].links.map((link, index) => (
+          ? data[id].links.map((item, index) => (
               <li key={index}>
                 <p className='text-light mb-lg-0'>
                   <small>
-                    <a className=' text-light' href='/'>
-                      {link}
-                    </a>
+                    <Link className=' text-light' to={item.link}>
+                      {item.label}
+                    </Link>
                   </small>
                 </p>
               </li>

@@ -16,7 +16,7 @@ function Nav({ className, style }) {
       style={style}>
       <nav className='navbar navbar-expand-md navbar-light bg-light rounded-pill px-3  shadow-sm'>
         <div className='container-fluid text-left justify-content-start'>
-          <Link className='navbar-brand' to='/'>
+          <Link className='navbar-brand rounded-pill ' to='/'>
             <img
               src='assets/img/logo-small.png'
               alt='logo-nav'
@@ -39,7 +39,7 @@ function Nav({ className, style }) {
             {NavData.map((item, index) => (
               <li key={index} className='nav-item text-dark'>
                 <NavLink
-                  className='text-nowrap nav-link'
+                  className='text-nowrap nav-link rounded-pill ms-1 px-2'
                   aria-current='page'
                   to={item.link}>
                   {item.title}

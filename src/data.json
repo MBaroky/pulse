@@ -105,26 +105,22 @@
     {
       "id": 1,
       "title": "Pulse Surveys",
-      "links": ["About Us", "Testimonials", "Blog"]
+      "links": [{"label":"About Us", "link":"/about"}, {"label":"Testimonials", "link":"/testimonials"} , {"label": "Blog", "link":"/"}]
     },
     {
       "id": 2,
       "title": "Quick Links",
-      "links": ["Term of Membership", "Privacy Policy", "FAQ's"]
+      "links": [{"label":"Term of Membership", "link":"/"}, {"label":"Privacy Policy", "link":"/"} , {"label": "FAQ's", "link":"/"}]
     },
     {
       "id": 3,
       "title": "My Account",
-      "links": ["Sign In", "Terms of Service", "Cookie Settings"]
+      "links": [{"label":"Sign In", "link":"/"}, {"label":"Terms of Service", "link":"/"} , {"label": "Cookie Settings", "link":"/"}]
     },
     {
       "id": 4,
       "title": "Support",
-      "links": [
-        "Support@Pulse.online",
-        "Box No. 44475, Dubai",
-        "866 361 5363"
-      ]
+      "links": [{"label":"Support@Pulse.online", "link":""}, {"label":"Box No. 44475, Dubai", "link":""} , {"label": "866 361 5363", "link":""}]
     }
   ]
 }

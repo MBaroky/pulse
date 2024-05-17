@@ -29,7 +29,8 @@ a.nav-link {
 a:hover,
 a.nav-link:hover,
 #main-nav a.nav-link.active {
-  color: var(--color-main)
+  background-color: var(--color-main);
+  color: #fff;
 }
 
 h1,
@@ -54,6 +55,14 @@ p small {
 /* styles classes */
 .isolate {
   isolation: isolate;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
 }
 
 .grad-bg {
