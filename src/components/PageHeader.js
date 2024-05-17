@@ -6,28 +6,31 @@ function PageHeader({ heading, desc, children }) {
   const borderColor = "#000";
   return (
     <>
+      <Nav
+        className='float-start py-0 d-inline-block'
+        style={{ marginTop: "-3rem", marginBottom: "-3rem" }}
+      />
       <header
         id='cover'
-        className='grad-bg pt-5 isolate'
+        className='grad-bg isolate'
         style={{
           minHeight: "350px",
           zIndex: 2,
           position: "relative",
           marginBottom: " -3rem",
         }}>
-        <Nav className='float-start py-0 d-inline-block ' />
-        <button className='btn rounded-pill px-4 py-2 btn-md bg-light float-end medium-font shadow'>
-          Say hi don’t be shy
-        </button>
         {/* first row with the button */}
         <div className='clearfix'>...</div>
-        {/* <div className='container'>
+        <div className='container'>
           <div id='top-bar' className='row'>
             <div className='col-md-6'></div>
             <div className='col-md-6'>
+              <button className='btn rounded-pill px-4 py-2 btn-md bg-light float-end medium-font shadow'>
+                Say hi don’t be shy
+              </button>
             </div>
           </div>
-        </div> */}
+        </div>
 
         <div className='container mb-3'>
           <div className='row'>

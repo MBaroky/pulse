@@ -8,12 +8,13 @@ const NavData = [
   { title: "Corporate", link: "corporate" },
 ];
 
-function Nav({ className }) {
+function Nav({ className, style }) {
   return (
     <div
       id='main-nav-sticky'
-      className={`container py-5 mt-3 sticky-top ${className}`}>
-      <nav className='navbar navbar-expand-md navbar-light bg-light rounded-pill px-3 '>
+      className={`container  py-5 sticky-top ${className}`}
+      style={style}>
+      <nav className='navbar navbar-expand-md navbar-light bg-light rounded-pill px-3  shadow-sm'>
         <div className='container-fluid text-left justify-content-start'>
           <Link className='navbar-brand' to='/'>
             <img
