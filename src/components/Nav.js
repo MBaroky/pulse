@@ -14,7 +14,9 @@ function Nav({ className, style }) {
       id='main-nav-sticky'
       className={`container  py-5 sticky-top ${className}`}
       style={style}>
-      <nav className='navbar navbar-expand-md navbar-light bg-light rounded-pill px-3  shadow-sm'>
+      <nav
+        className='navbar navbar-expand-md navbar-light rounded-pill px-3  shadow-sm'
+        style={{ background: "rgba(255,255,255,0.6)" }}>
         <div className='container-fluid text-left justify-content-start'>
           <Link className='navbar-brand rounded-pill ' to='/'>
             <img
@@ -35,7 +37,7 @@ function Nav({ className, style }) {
           </button>
           <ul
             id='main-nav'
-            className='collapse navbar-collapse nav navbar-nav flex-nowrap bg-light'>
+            className='collapse navbar-collapse nav navbar-nav flex-nowrap bg-light bg-md-transparent'>
             {NavData.map((item, index) => (
               <li key={index} className='nav-item text-dark'>
                 <NavLink

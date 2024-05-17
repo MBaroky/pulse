@@ -62,7 +62,7 @@ If you're eager to dive into the world of survey participation and  unlock a ple
                 </p>
               </div>
               <div
-                className='col col-md-4 d-flex justify-content-center '
+                className='col col-md-4 '
                 style={{ width: "106px" }}>
                 <img src={step.img} className='img-fluid' alt='' />
               </div>

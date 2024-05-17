@@ -24,7 +24,7 @@ function AboutPage() {
   ];
   return (
     <>
-      <PageHeader heading='About Pulse'>
+      <PageHeader heading='About Pulse' mb='mb-5'>
         {desc?.map((paragraph, index) => (
           <p
             key={index}

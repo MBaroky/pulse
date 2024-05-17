@@ -153,6 +153,10 @@ nav.navbar {
   .sticky-top.is-pinned ul {
     max-width: 0px;
   }
+
+  .bg-md-transparent {
+    background: transparent !important;
+  }
 }
 
 @media (max-width:767px) {

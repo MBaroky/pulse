@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 
-function PageHeader({ heading, desc, children }) {
+function PageHeader({ heading, desc, children, mb }) {
   const borderSize = "3px";
   const borderColor = "#000";
   return (
@@ -39,7 +39,7 @@ function PageHeader({ heading, desc, children }) {
                 className='text-center text-white mb-5'
                 style={{
                   textShadow: `16px 16px 0px ${borderColor}, ${borderSize} 0px 0px ${borderColor}, -${borderSize} 0px 0px ${borderColor}, 0px ${borderSize} 0px ${borderColor}, 0px -${borderSize} 0px ${borderColor}, ${borderSize} -${borderSize} 0px ${borderColor}, -${borderSize} ${borderSize} 0px ${borderColor}, ${borderSize} ${borderSize} 0px ${borderColor}, -${borderSize} -${borderSize} 0px ${borderColor}`,
-                  fontSize: "120px",
+                  fontSize: "6rem",
                 }}>
                 {heading}
               </h1>
@@ -50,10 +50,10 @@ function PageHeader({ heading, desc, children }) {
               )}
             </div>
           </div>
-          <div className='spacer' style={{ height: "100px" }}></div>
+          <div className={`spacer ${mb ? mb : ""}`}></div>
         </div>
-
-        <hr className='container mt-5 mb-5' />
+        <div className='clearfix'>...</div>
+        <hr className={`container mt-5 ${mb ? mb : ""}`} />
       </header>
     </>
   );

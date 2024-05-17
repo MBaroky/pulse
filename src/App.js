@@ -8,6 +8,7 @@ import AboutPage from "./Pages/AboutPage";
 import HowPage from "./Pages/HowPage";
 import TestimonialsPage from "./Pages/TestimonialsPage,js";
 import NoPage from "./Pages/NoPage";
+import RewardsPage from "./Pages/RewardsPage";
 
 function App() {
   // Using state to store the data from the JSON file
@@ -27,10 +28,8 @@ function App() {
           path='testimonials'
           element={<TestimonialsPage data={jsonData} />}
         />
-        <Route
-          path='how-it-works'
-          element={<HowPage data={jsonData} />}
-        />
+        <Route path='how-it-works' element={<HowPage />} />
+        <Route path='rewards' element={<RewardsPage />} />
         <Route path='*' element={<NoPage />} />
       </Routes>
       <Footer social={jsonData.social} links={jsonData.footerLinks} />
