@@ -9,6 +9,7 @@ import HowPage from "./Pages/HowPage";
 import TestimonialsPage from "./Pages/TestimonialsPage,js";
 import NoPage from "./Pages/NoPage";
 import RewardsPage from "./Pages/RewardsPage";
+import CooperatesPage from "./Pages/CooperatesPage";
 
 function App() {
   // Using state to store the data from the JSON file
@@ -30,6 +31,7 @@ function App() {
         />
         <Route path='how-it-works' element={<HowPage />} />
         <Route path='rewards' element={<RewardsPage />} />
+        <Route path='cooperates' element={<CooperatesPage />} />
         <Route path='*' element={<NoPage />} />
       </Routes>
       <Footer social={jsonData.social} links={jsonData.footerLinks} />

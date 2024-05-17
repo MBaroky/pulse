@@ -5,7 +5,7 @@ const NavData = [
   { title: "About pulse", link: "/about" },
   { title: "How It Works", link: "/how-it-works" },
   { title: "Rewards", link: "/rewards" },
-  { title: "Corporate", link: "corporate" },
+  { title: "Cooperates", link: "/cooperates" },
 ];
 
 function Nav({ className, style }) {
