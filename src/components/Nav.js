@@ -16,7 +16,7 @@ function Nav({ className, style }) {
       style={style}>
       <nav
         className='navbar navbar-expand-md navbar-light rounded-pill px-3  shadow-sm'
-        style={{ background: "rgba(255,255,255,0.6)" }}>
+        style={{ background: "rgba(255,255,255,0.8)" }}>
         <div className='container-fluid text-left justify-content-start'>
           <Link className='navbar-brand rounded-pill ' to='/'>
             <img

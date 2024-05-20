@@ -8,7 +8,7 @@ function PageHeader({ heading, desc, children, mb }) {
   return (
     <>
       <Nav
-        className='float-start py-0 d-inline-block w-auto '
+        className='float-start py-0 d-inline-block w-auto mt-2'
         style={{ marginTop: "-3rem", marginBottom: "-3rem" }}
       />
       <header
