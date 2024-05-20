@@ -6,7 +6,7 @@ import Home from "./Pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutPage from "./Pages/AboutPage";
 import HowPage from "./Pages/HowPage";
-import TestimonialsPage from "./Pages/TestimonialsPage,js";
+import TestimonialsPage from "./Pages/TestimonialsPage";
 import NoPage from "./Pages/NoPage";
 import RewardsPage from "./Pages/RewardsPage";
 import CooperatesPage from "./Pages/CooperatesPage";
@@ -32,7 +32,9 @@ function App() {
           />
           <Route
             path='testimonials'
-            element={<TestimonialsPage data={jsonData} />}
+            element={
+              <TestimonialsPage data={jsonData.testimonials} />
+            }
           />
           <Route path='how-it-works' element={<HowPage />} />
           <Route path='rewards' element={<RewardsPage />} />
