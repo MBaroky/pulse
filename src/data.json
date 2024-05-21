@@ -39,6 +39,46 @@
       "title": "Customer Experience Specialist",
       "slide": 1,
       "bgImg": false
+    },
+    {
+      "id": 6,
+      "desc": "Pulse has been an amazing platform for me to earn extra income. The  surveys are interesting and easy to complete, and the payouts are quick  and reliable. Thanks to Pulse, I've been able to boost my finances and  achieve my financial goals. Highly recommend it!",
+      "name": "Ahmed H.",
+      "title": "Marketing Analyst",
+      "slide": 2,
+      "bgImg": "assets/img/cover-arrow.png"
+    },
+    {
+      "id": 7,
+      "desc": "Discovering Pulse has been a game-changer for me. The surveys are  engaging, and the payouts are prompt. With Pulse, I've been able to earn  extra income effortlessly. I highly recommend it to anyone looking for a  legitimate way to make money online.",
+      "name": "Omar Magdy",
+      "title": "Graphic Designer",
+      "slide": 2,
+      "bgImg": "assets/img/about-crecent.png"
+    },
+    {
+      "id": 8,
+      "desc": "I've been using Pulse for a while now, and I'm extremely satisfied. The  surveys are diverse and well-compensated, and the platform is  user-friendly. Pulse has become my go-to for earning money online. Thank  you, Pulse!",
+      "name": "Fatima Ali",
+      "title": "Software Engineer",
+      "slide": 2,
+      "bgImg": false
+    },
+    {
+      "id": 9,
+      "desc": "Pulse is hands down the best survey website I've come across. The  surveys are easy to access and complete, and the rewards are fair. I've  been able to earn money consistently with Pulse. It's a trustworthy  platform that I highly recommend.",
+      "name": "Yasmin Karam",
+      "title": "Financial Advisor",
+      "slide": 2,
+      "bgImg": false
+    },
+    {
+      "id": 10,
+      "desc": "I'm hooked on Pulse! The surveys are diverse and well-compensated, and  the platform is easy to navigate. Pulse has made earning money online a  breeze for me. I can't recommend it enough!",
+      "name": "Ali S.",
+      "title": "Social Media Manager",
+      "slide": 2,
+      "bgImg": false
     }
   ],
   "blog": [
