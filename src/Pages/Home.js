@@ -8,6 +8,8 @@ import Brands from "../sections/Brands";
 import Header from "../sections/Header";
 import Nav from "../components/Nav";
 
+import blogData from "../blog.json";
+
 function Home({ data }) {
   return (
     <>
@@ -29,7 +31,7 @@ function Home({ data }) {
           </div>
         </div>
       </Contact>
-      <Blogs data={data.blog} />
+      <Blogs data={blogData.posts} />
       <Brands data={data.brands} />
       <div className='clearfix'>...</div>
     </>

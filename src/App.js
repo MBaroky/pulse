@@ -11,6 +11,8 @@ import NoPage from "./Pages/NoPage";
 import RewardsPage from "./Pages/RewardsPage";
 import CooperatesPage from "./Pages/CooperatesPage";
 import ContactPage from "./Pages/ContactPage";
+import BlogPage from "./Pages/BlogPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   // Using state to store the data from the JSON file
@@ -24,6 +26,8 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
+
         <Routes>
           <Route path='/' element={<Home data={jsonData} />} />
           <Route
@@ -40,6 +44,7 @@ function App() {
           <Route path='rewards' element={<RewardsPage />} />
           <Route path='cooperates' element={<CooperatesPage />} />
           <Route path='contact' element={<ContactPage />} />
+          <Route path='blog' element={<BlogPage />} />
           <Route path='*' element={<NoPage />} />
         </Routes>
         <Footer

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -17,9 +18,11 @@ function About() {
                 scale and caliber of leads in a streamlined and
                 compliant manner.
               </p>
-              <button className='btn rounded-pill px-4 py-2 btn-md bg-light medium-font shadow'>
+              <Link
+                to='/about'
+                className='btn rounded-pill px-4 py-2 btn-md bg-light medium-font shadow'>
                 Read More
-              </button>
+              </Link>
             </div>
           </div>
         </div>

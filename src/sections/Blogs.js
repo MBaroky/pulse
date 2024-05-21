@@ -1,5 +1,6 @@
 import React from "react";
 import BlogItem from "../components/BlogItem";
+import { Link } from "react-router-dom";
 
 function Blogs({ data }) {
   return (
@@ -14,9 +15,11 @@ function Blogs({ data }) {
             </p>
           </div>
           <div className='col-md-3'>
-            <button className='btn rounded-pill px-4 py-2 btn-md bg-light float-end medium-font shadow'>
+            <Link
+              to='/blog'
+              className='btn rounded-pill px-4 py-2 btn-md bg-light float-end medium-font shadow'>
               Discover More
-            </button>
+            </Link>
           </div>
         </div>
         <div
@@ -24,45 +27,38 @@ function Blogs({ data }) {
           className='carousel slide pb-5 carouselWithIndicators'
           data-bs-ride='carousel'>
           <ol className='carousel-indicators'>
-            <li
-              data-bs-target='#blogsCarousel'
-              data-bs-slide-to='0'
-              className='active'></li>
-            <li
-              data-bs-target='#blogsCarousel'
-              data-bs-slide-to='1'></li>
-            <li
-              data-bs-target='#blogsCarousel'
-              data-bs-slide-to='2'></li>
+            {Array.apply(null, Array(Math.ceil(data.length / 3))).map(
+              (value, index) => (
+                <li
+                  data-bs-target='#blogsCarousel'
+                  data-bs-slide-to={index}
+                  className={`${index === 0 ? "active" : ""}`}></li>
+              )
+            )}
           </ol>
           <div className='carousel-inner'>
-            <div className='carousel-item active'>
-              <div className='row' id='testmonials-wrapper'>
-                {data
-                  ? data.map(item => (
-                      <BlogItem key={item.id} data={item} />
-                    ))
-                  : ""}
-              </div>
-            </div>
-            <div className='carousel-item'>
-              <div className='row' id='testmonials-wrapper'>
-                {data
-                  ? data.map(item => (
-                      <BlogItem key={item.id} data={item} />
-                    ))
-                  : ""}
-              </div>
-            </div>
-            <div className='carousel-item'>
-              <div className='row' id='testmonials-wrapper'>
-                {data
-                  ? data.map(item => (
-                      <BlogItem key={item.id} data={item} />
-                    ))
-                  : ""}
-              </div>
-            </div>
+            {Array.apply(null, Array(Math.ceil(data.length / 3))).map(
+              (value, index) => (
+                <div
+                  key={index}
+                  className={`carousel-item ${
+                    index === 0 ? "active" : ""
+                  }`}>
+                  <div className='row' id='testmonials-wrapper'>
+                    {data
+                      ? data
+                          .slice(index * 3, index * 3 + 3)
+                          .map(item => (
+                            <BlogItem
+                              key={item.post_id}
+                              data={item}
+                            />
+                          ))
+                      : ""}
+                  </div>
+                </div>
+              )
+            )}
           </div>
         </div>
       </div>

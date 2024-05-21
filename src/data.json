@@ -145,7 +145,7 @@
     {
       "id": 1,
       "title": "Pulse Surveys",
-      "links": [{"label":"About Us", "link":"/about"}, {"label":"Testimonials", "link":"/testimonials"} , {"label": "Blog", "link":"/"}]
+      "links": [{"label":"About Us", "link":"/about"}, {"label":"Testimonials", "link":"/testimonials"} , {"label": "Blog", "link":"/blog"}]
     },
     {
       "id": 2,
