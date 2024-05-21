@@ -13,6 +13,7 @@ import CooperatesPage from "./Pages/CooperatesPage";
 import ContactPage from "./Pages/ContactPage";
 import BlogPage from "./Pages/BlogPage";
 import ScrollToTop from "./components/ScrollToTop";
+import PostPage from "./Pages/PostPage";
 
 function App() {
   // Using state to store the data from the JSON file
@@ -45,6 +46,7 @@ function App() {
           <Route path='cooperates' element={<CooperatesPage />} />
           <Route path='contact' element={<ContactPage />} />
           <Route path='blog' element={<BlogPage />} />
+          <Route path='posts/:id' element={<PostPage />} />
           <Route path='*' element={<NoPage />} />
         </Routes>
         <Footer

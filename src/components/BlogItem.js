@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function BlogItem({ data }) {
+  const { PUBLIC_URL } = process.env;
   const { post_title, post_content, post_img } = data;
   return (
     <div className='col-lg-4 d-flex'>
@@ -15,12 +17,14 @@ function BlogItem({ data }) {
           <img
             style={{ width: "100%" }}
             className='img-fluid ratio-16x9 '
-            src={post_img}
+            src={`${PUBLIC_URL}/${post_img}`}
             alt='blog'
           />
-          <button className='btn rounded-pill mt-3 px-4 py-2 btn-md bg-light float-end medium-font shadow'>
+          <Link
+            to={`${PUBLIC_URL}/posts/${data.post_id}`}
+            className='btn rounded-pill mt-3 px-4 py-2 btn-md bg-light float-end medium-font shadow'>
             Read More
-          </button>
+          </Link>
         </div>
       </div>
     </div>

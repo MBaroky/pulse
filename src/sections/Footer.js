@@ -2,6 +2,7 @@ import React from "react";
 import FooterLinks from "../components/FooterLinks";
 
 function Footer({ social, links }) {
+  const { PUBLIC_URL } = process.env;
   return (
     <footer
       className='mt-5'
@@ -17,7 +18,7 @@ function Footer({ social, links }) {
           <div className='col-lg-4 col-12 order-first order-lg-0 text-center'>
             <img
               id='footer-logo'
-              src='assets/img/logo-footer.png'
+              src={`${PUBLIC_URL}/assets/img/logo-footer.png`}
               alt='logo'
               className='img-fluid mb-5'
             />
