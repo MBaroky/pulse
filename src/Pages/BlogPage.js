@@ -20,7 +20,7 @@ Embark on an enlightening journey through our extensive collection of  captivati
         <div className='container-fluid '>
           <div className='row'>
             {data?.map(item => (
-              <BlogItem key={item.id} data={item} />
+              <BlogItem key={item.post_id} data={item} />
             ))}
           </div>
         </div>
